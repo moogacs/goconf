@@ -1,0 +1,5 @@
+host:
+    address: 54.92.218.144
+    port: 22
+    user: root
+    password: password

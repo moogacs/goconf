@@ -1,0 +1,18 @@
+install:
+  - apache2
+  - php
+
+run:
+  - apache2
+
+transfer_files:
+  - owner: root
+    group: root
+    mode: 0644
+    localpath: server/defaults/index.php
+    remotepath: /var/www/html/index.php
+  - owner: root
+    group: root
+    mode: 0644
+    localpath: server/defaults/000-default.conf
+    remotepath: /etc/apache2/sites-available/000-default.conf

@@ -1,0 +1,20 @@
+host:
+    address: ip
+    port: 22
+    user: root
+    password: password
+
+install:
+  - golang-go
+
+transfer_files:
+  - owner: root
+    group: root
+    mode: 0644
+    localpath: server/ip/test.txt
+    remotepath:  /root/hello.txt
+  - owner: root
+    group: root
+    mode: 0644
+    localpath: server/ip/test2.txt
+    remotepath:  /root/hello2.txt
